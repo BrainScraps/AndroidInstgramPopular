@@ -47,16 +47,7 @@ public class PhotoFeedActivity extends ActionBarActivity {
                     photosJSON = response.getJSONArray("data");
                     for (int i = 0; i < photosJSON.length(); i++){
                         JSONObject photoJSON = photosJSON.getJSONObject(i);
-                        InstagramPhoto photo = new InstagramPhoto();
-                        if (photoJSON.getJSONObject("caption") == null) {
-                            photo.caption = "";
-                        } else {
-                            photo.caption = photoJSON.getJSONObject("caption").getString("text");
-                        }
-                        photo.username = photoJSON.getJSONObject("user").getString("username");
-                        photo.imageUrl = photoJSON.getJSONObject("images").getJSONObject("standard_resolution").getString("url");
-                        photo.imageHeight = photoJSON.getJSONObject("images").getJSONObject("standard_resolution").getInt("height");
-                        photo.likeCount = photoJSON.getJSONObject("likes").getInt("count");
+                        InstagramPhoto photo = new InstagramPhoto(photoJSON);
                         photos.add(photo);
                     }
 
