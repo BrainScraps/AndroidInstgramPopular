@@ -7,6 +7,7 @@ public class InstagramPhoto {
     public String username;
     public String caption;
     public String imageUrl;
+    public String userProfileImageUrl;
     public int imageHeight;
     public int likeCount;
 
@@ -17,7 +18,9 @@ public class InstagramPhoto {
             } else {
                 this.caption = json.getJSONObject("caption").getString("text");
             }
-            this.username = json.getJSONObject("user").getString("username");
+            JSONObject user = json.getJSONObject("user");
+            this.username = user.getString("username");
+            this.userProfileImageUrl = user.getString("profile_picture");
             this.imageUrl = json.getJSONObject("images").getJSONObject("standard_resolution").getString("url");
             this.imageHeight = json.getJSONObject("images").getJSONObject("standard_resolution").getInt("height");
             this.likeCount = json.getJSONObject("likes").getInt("count");

@@ -17,7 +17,9 @@ public class InstagramPhotoAdapter extends ArrayAdapter<InstagramPhoto>{
 
     private static class ViewHolder {
         TextView caption;
+        TextView username;
         ImageView image;
+        ImageView profilePhoto;
     }
 
     @Override
@@ -29,15 +31,21 @@ public class InstagramPhotoAdapter extends ArrayAdapter<InstagramPhoto>{
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.item_photo, parent, false);
             viewHolder.image = (ImageView) convertView.findViewById(R.id.ivPhoto);
+            viewHolder.profilePhoto = (ImageView) convertView.findViewById(R.id.ivProfilePhoto);
             viewHolder.caption = (TextView) convertView.findViewById(R.id.tvCaption);
+            viewHolder.username = (TextView) convertView.findViewById(R.id.tvUsername);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
         viewHolder.caption.setText(photo.caption);
+        viewHolder.username.setText(photo.username);
         viewHolder.image.setImageResource(0);
+        viewHolder.profilePhoto.setImageResource(0);
         Picasso.with(getContext()).load(photo.imageUrl).into(viewHolder.image);
+        Picasso.with(getContext()).load(photo.userProfileImageUrl).
+                transform(new CircleTransform()).into(viewHolder.profilePhoto);
 
         return convertView;
     }
