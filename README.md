@@ -10,4 +10,5 @@ Required README elements:
   - User can see user profile image
   - Rounded user profile view
 3. GIF 
-  ![Walkthrough of Scrolling](https://drive.google.com/file/d/0Bw6B_KIKSUxwQXFwRUZBVWIyRzQ/view?usp=sharing)
+  ![Walkthrough of Scrolling](https://lh6.googleusercontent.com/sSwHZJ0tQ46nRAif38IdRZU1jQkC_F-fJ47-EYlAkQvYGP1hnA7iIq894_JoLyJTPlSyRiPKdGs=w2107-h1238)
+
