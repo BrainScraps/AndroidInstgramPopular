@@ -9,6 +9,6 @@ Required README elements:
   - User can see Graphic, Caption, Username
   - User can see user profile image
   - Rounded user profile view
-3. GIF 
-  ![Walkthrough of Scrolling](https://lh6.googleusercontent.com/sSwHZJ0tQ46nRAif38IdRZU1jQkC_F-fJ47-EYlAkQvYGP1hnA7iIq894_JoLyJTPlSyRiPKdGs=w2107-h1238)
 
+
+![Walkthrough of App](https://photos-5.dropbox.com/t/2/AAB7sYO9gL_4gzBPrrOFIaqoTKxiHqEXLluXfJ5SCQTeCA/12/22926250/jpeg/1024x768/3/1424790000/0/2/instaPop.gif/CKqn9wogASACIAMoASgC/1RfauFd7h9PmYk-CQlJ4zMZqKTFRAMs2MLiAVUf4Abc) 
