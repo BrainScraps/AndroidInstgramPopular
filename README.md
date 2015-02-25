@@ -11,4 +11,4 @@ Required README elements:
   - Rounded user profile view
 
 
-![Walkthrough of App](https://photos-5.dropbox.com/t/2/AAB7sYO9gL_4gzBPrrOFIaqoTKxiHqEXLluXfJ5SCQTeCA/12/22926250/jpeg/1024x768/3/1424790000/0/2/instaPop.gif/CKqn9wogASACIAMoASgC/1RfauFd7h9PmYk-CQlJ4zMZqKTFRAMs2MLiAVUf4Abc) 
+![Walkthrough of App](https://www.dropbox.com/s/x9yaq2l7zmdi4k5/instaPop.gif?dl=1) 
